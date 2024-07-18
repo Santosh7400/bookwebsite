@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Book Catalogue</h1>
+
+<table border="2">
+  <tr>
+    <th>Book</th>
+    <th>Author</th>
+    <th>Publication</th>
+    <td>Number of Book</td>
+    <th>Add to Cart</th>
+  </tr>
+  <tr>
+    <td>Web Technologies</td>
+    <td>Uttam K. Ray</td>
+    <td>Oxford University Press</td>
+    <td>531</td>
+    <td><button>Add to cart</button></td>
+  </tr>
+  <tr>
+    <td>PHP & MySQL Web Development</td>
+    <td>Lake Welling & Laura Thomp</td>
+    <td>PEARSON</td>
+    <td>898</td>
+    <td><button>Add to cart</button></td>
+  </tr>
+</table>
+<br>
+<br>
+<br>
+
+<style>
+    
+    body {
+        background-color: #f0f0f0; 
+        
+    }
+
+    table {
+        width: 100%; 
+        background-color: #fff; 
+        border-collapse: collapse;
+       
+    }
+
+    th, td {
+        padding: 8px;
+        border: 1px solid #ccc; 
+        
+    }
+
+    th {
+        background-color: #333; 
+        color: #fff; 
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 8px 16px;
+        border: none; 
+        cursor: pointer; 
+        border-radius: 4px;
+    }
+
+    button:hover {
+        background-color: #45a049; 
+    }
+</style>
+
+<div class="CSE">
+    <header>
+        <h1>Computer Science and Engineering (CSE)</h1>
+    </header>
+    
+    <main>
+        <div class="CSE-group">
+            <label for="book">Text Books:</label>
+            <select id="book" name="book">
+                <option value="Web-Technology">Web-Technology</option>
+                <option value="DAA">DAA</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Data-structure">Data-structure</option>
+                <option value="C++">C++</option>
+            </select>
+        </div>
+        <div class="CSE-group">
+            <label for="quantity">Quantity:</label>
+            <input type="Quntatity" id="Quantity" name="Quantity" placeholder="Quantity:">
+        </div>
+      
+       <button id="ok">Ok</button>
+       <br>
+       <p>Cost of one book is "500" + shipping "1000"</p>
+     
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 CSE Textbooks</p>
+    </footer>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-----------ECE------------------>
+    <div class="ECE">
+        <header>
+            <h1>Electronics and Communication Engineering</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><b>Digital Circuits</b></li>
+                <li><b>Signals and Systems</b></li>
+                <li><b>Digital Communication</b></li>
+            </ul>
+        </nav>
+        <div class="ECE-footer">
+        <footer>
+            <p>&copy; 2024 ECE TextBooks </p>
+        </footer>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <!---------------EEE------------------>
+    <div class="EEE">
+        <header>
+            <h1>Electronics and Electronic Engineering</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><b>Concepts in Electric Circuits</b></li>
+                <li><b>Introduction to Electronic Engineering</b></li>
+                <li><b>Electrical Power</b></li>
+            </ul>
+        </nav>
+        <div class="ECE-footer">
+        <footer>
+            <p>&copy; 2024 EEE TextBooks</p>
+        </footer>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <!-------------MECH----------------->
+    <div class="MECH">
+        <header>
+            <h1>Mechanical Engineering</h1>
+        </header>
+        <nav>
+            <ol type="I">
+                <li><b>Theory of Machines</b></li>
+                <li><b>Automation and Robotices</b></li>
+                <li><b>Engineering Fluid Mechanics</b></li>
+            </ol>
+        </nav>
+        <div class="MECH-footer">
+        <footer>
+            <p>&copy; 2024 MECH TextBooks</p>
+        </footer>
+        </div>
+    </div>
+    <script src="week1.js"></script>
+</body>
+</html>
+<script src="week1.js"></script>
+<style>
+    .CSE {
+    background-color: aqua;
+    width: 500px;
+   
+}
+footer {
+    background-color: #333;
+    color: red;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+     
+}
+.ECE {
+    background-color: #ba72b2;
+    width: 500px;
+    margin-right: 500px;
+}
+
+.ECE-footer {
+
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #ba72b2;
+}
+
+.EEE {
+    background-color:#9b4dbd;
+    width: 500px;
+    margin-right: 500px;
+}
+.MECH {
+    background-color: yellow;
+    width: 500px;
+    margin-right: 500px;
+}
+</style>
+</body>
+</html>
